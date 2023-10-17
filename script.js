@@ -1,6 +1,4 @@
 
-
-
 window.onload = function() {
     var abouttext = document.getElementById('about-section');
     //console.log(abouttext);
@@ -42,7 +40,7 @@ fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/web
     gallery6.src=data.gallery6;
     gallery7.src=data.gallery7;
     gallery8.src=data.gallery8;
-    icon.src=data.icon;
+    icon.className=data.icon;
     icon1.src=data.icon1;
     icon2.src=data.icon2;
     icon3.src=data.icon3;

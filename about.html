@@ -27,16 +27,33 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <script src="script.js"></script>
+  <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css">
+
 </head>
 
-<body class="sub_page">
+<body>
+<!-- <p id="result"></p> -->
+
+<script>
+  // Get the deployed URL
+  const deployedURL = window.location.href;
+
+  // Remove dots, extra spaces, and hostname from the URL
+  const cleanedURL = deployedURL.replace(/[.\s]+/g, '').replace(/^https?:\/\//, '').split('/')[0];
+
+  // Display only the website name (domain)
+  document.getElementById('result').textContent = cleanedURL;
+</script>
+
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="" />
+            <img src="" id="title" style="height: 80px; width: 100px;object-fit: cover;" alt="" />
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,17 +62,17 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  ">
-              <li class="nav-item ">
+              <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="about.html"> About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="shop.html">Shop </a>
+                <a class="nav-link" href="gallery.html">Gallery </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="furniture.html"> Furniture </a>
+                <a class="nav-link" href="services.html"> Services </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact us</a>
@@ -93,7 +110,6 @@
       </div>
     </header>
     <!-- end header section -->
-  </div>
 
 
   <!-- about section -->
@@ -109,7 +125,7 @@
               </h2>
 
             </div>
-            <p>
+            <p id="about-section">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam
             </p>
@@ -120,7 +136,7 @@
         </div>
         <div class="col-md-6">
           <div class="img-box">
-            <img src="images/about-img.png" alt="">
+            <img src="" alt="">
           </div>
         </div>
       </div>
@@ -130,20 +146,69 @@
   <!-- end about section -->
 
 
+  <!-- contact section -->
+
+  <section class="contact_section layout_padding">
+    <div class="container ">
+      <div class="heading_container">
+        <h2 class="">
+          Enquiry
+        </h2>
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <form action="">
+            <div>
+              <input type="text" placeholder="Name" />
+            </div>
+            <div>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div>
+              <input type="text" placeholder="Phone" />
+            </div>
+            <div>
+              <input type="text" class="message-box" placeholder="Message" />
+            </div>
+            <div class="d-flex ">
+              <button>
+                SEND
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div class="map_container">
+            <div class="map-responsive">
+              <iframe
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"
+                width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
   <!-- info section -->
   <section class="info_section layout_padding2">
     <div class="container">
       <div class="info_logo">
         <h2>
-          Digitf
+          Contact Us
         </h2>
       </div>
-      <div class="row">
+      <div class="row" style="justify-content: space-between;">
 
         <div class="col-md-3">
           <div class="info_contact">
             <h5>
-              About Shop
             </h5>
             <div>
               <div class="img-box">
@@ -157,77 +222,21 @@
               <div class="img-box">
                 <img src="images/telephone-white.png" width="12px" alt="">
               </div>
-              <p>
-                +01 1234567890
+              <p id="phone-num">
+                
               </p>
             </div>
             <div>
               <div class="img-box">
                 <img src="images/envelope-white.png" width="18px" alt="">
               </div>
-              <p>
-                demo@gmail.com
+              <p id="mail-id">
+                
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="info_info">
-            <h5>
-              Informations
-            </h5>
-            <p>
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="info_insta">
-            <h5>
-              Instagram
-            </h5>
-            <div class="insta_container">
-              <div>
-                <a href="">
-                  <div class="insta-box b-1">
-                    <img src="images/i-1.jpg" alt="">
-                  </div>
-                </a>
-                <a href="">
-                  <div class="insta-box b-2">
-                    <img src="images/i-2.jpg" alt="">
-                  </div>
-                </a>
-              </div>
-
-              <div>
-                <a href="">
-                  <div class="insta-box b-3">
-                    <img src="images/i-3.jpg" alt="">
-                  </div>
-                </a>
-                <a href="">
-                  <div class="insta-box b-4">
-                    <img src="images/i-4.jpg" alt="">
-                  </div>
-                </a>
-              </div>
-              <div>
-                <a href="">
-                  <div class="insta-box b-3">
-                    <img src="images/i-5.jpg" alt="">
-                  </div>
-                </a>
-                <a href="">
-                  <div class="insta-box b-4">
-                    <img src="images/i-6.jpg" alt="">
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+      
         <div class="col-md-3">
           <div class="info_form ">
             <h5>
@@ -266,8 +275,7 @@
   <section class="container-fluid footer_section ">
     <div class="container">
       <p>
-        &copy; 2019 All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
+        &copy; 2023 All Rights Reserved.
       </p>
     </div>
   </section>
@@ -320,6 +328,38 @@
 
     })
   </script>
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+
+  <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+  <script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+  
+  <script>
+  var player = videojs('hls-example');
+  player.play();
+  </script>
+  <!-- ---------------------------------------------------------- -->
+<script>
+  // Boolean value
+  const showVideo = true; // Set this to true or false based on your condition
+
+  // Get the video container element
+  const videoContainer = document.getElementById('video-container');
+
+  // Check the boolean value and hide/show the video accordingly
+  if (!showVideo) {
+      videoContainer.style.display = 'none'; // Hide the video container
+  }
+</script>
+
+
+
 
 </body>
 </body>
