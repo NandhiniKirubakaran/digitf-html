@@ -1,5 +1,6 @@
 
 
+
 window.onload = function() {
     var abouttext = document.getElementById('about-section');
     //console.log(abouttext);
