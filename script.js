@@ -43,9 +43,9 @@ fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/web
     gallery7.src=data.gallery7;
     gallery8.src=data.gallery8;
     icon.className=data.icon;
-    icon1.src=data.icon1;
-    icon2.src=data.icon2;
-    icon3.src=data.icon3;
+    icon1.className=data.icon1;
+    icon2.className=data.icon2;
+    icon3.className=data.icon3;
 })
 }
 
