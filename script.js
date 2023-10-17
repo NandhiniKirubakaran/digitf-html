@@ -21,6 +21,8 @@ window.onload = function() {
     var icon2 = document.getElementById('icon2');
     var icon3 = document.getElementById('icon3');
 
+    // const apiURL = "cerulean-lily-067a1enetlifyapp";
+
 fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/websites/quiet-mochi-8168aenetlifyapp.json`)
 .then((value)=>value.json())
 .then((data)=>{
