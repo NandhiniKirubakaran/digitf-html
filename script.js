@@ -31,7 +31,7 @@ window.onload = function() {
    // document.getElementById('result').textContent = cleanedURL;
 
 
-fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/websites/${cleanedURL}.json`)
+fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/websites/cerulean-lily-067a1enetlifyapp.json`)
 .then((value)=>value.json())
 .then((data)=>{
     abouttext.innerHTML=data.about_us;

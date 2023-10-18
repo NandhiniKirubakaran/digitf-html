@@ -225,7 +225,22 @@
 
 @media (max-width: 481px) {
   .slider-img {
-    height: 150px;
+    height: 350px;
     width: 350px;
+    object-fit: cover;
+  }
+  #hls-example {
+    height: 250px;
+    width: 350px;
+  }
+  
+}
+
+  
+@media (min-width: 1200px){
+  .slider-img {
+    height: 500px;
+    width: 800px;
+    object-fit: cover;
   }
 }

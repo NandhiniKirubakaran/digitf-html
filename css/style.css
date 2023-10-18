@@ -5,8 +5,8 @@ body {
 }
 
 .layout_padding {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 50px;
+  /* padding-bottom: 50px; */
 }
 
 .layout_padding2 {
@@ -27,7 +27,8 @@ body {
 }
 
 .layout_padding-bottom {
-  padding-bottom: 90px;
+  padding-top: 50px;
+  
 }
 
 .heading_container {
