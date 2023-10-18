@@ -203,9 +203,9 @@
   }
 }
 
-@media (max-width: 480px) {}
+/* @media (max-width: 480px) {}
 
-@media (max-width: 420px) {
+/* @media (max-width: 420px) {
   .slider_section .detail-box h1 {
     font-size: 2rem;
   }
@@ -213,7 +213,7 @@
   .slider_section .detail-box h1 span {
     font-size: 3rem;
   }
-}
+} */ 
 
 @media (max-width: 360px) {}
 
@@ -221,4 +221,8 @@
   .container {
     max-width: 1170px;
   }
+}
+
+@media (max-width: 481px) {
+  
 }
