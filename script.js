@@ -58,4 +58,24 @@ fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/web
 }
 
 
- 
+ // <---------------------------------------------------------------->
+
+function expandImage(name) {
+    const imageContainer = document.querySelector(".img-box");
+    const expandedImageContainer = document.querySelector(".expanded-image-container");
+    const expandedImage = document.getElementById('expanded-image');
+    let newSrc = document.getElementById(name).src;
+    expandedImage.src = newSrc;
+  
+    imageContainer.style.display = "none";
+    expandedImageContainer.style.display = "flex";
+  }
+  
+  function closeExpandedImage() {
+    const imageContainer = document.querySelector(".img-box");
+    const expandedImageContainer = document.querySelector(".expanded-image-container");
+  
+    imageContainer.style.display = "flex";
+    expandedImageContainer.style.display = "none";
+  }
+  

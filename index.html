@@ -227,18 +227,18 @@
                   <div class="img_container ">
                     <div class="box b-1">
                       <div class="img-box">
-                        <img src="" id="gallery1" style="object-fit: cover;height: 220px; width: 280px;"   alt="">
+                        <img src="" id="gallery1" style="object-fit: cover;height: 220px; width: 280px;"   alt="" onclick="expandImage('gallery1')">
                       </div>
                       <div class="img-box">
-                        <img src="" id="gallery2" style="object-fit: cover;height: 220px; width: 280px;" alt="">
+                        <img src="" id="gallery2" style="object-fit: cover;height: 220px; width: 280px;" alt="" onclick="expandImage('gallery2')">
                       </div>
                     </div>
                     <div class="box b-2">
                       <div class="img-box">
-                        <img src="" id="gallery3" style="object-fit: cover;height: 350px; width: 250px;" alt="">
+                        <img src="" id="gallery3" style="object-fit: cover;height: 350px; width: 250px;" alt="" onclick="expandImage('gallery3')">
                       </div>
                       <div class="img-box">
-                        <img src="" id="gallery4" style="object-fit: cover; height: 350px; width: 250px;" alt="">
+                        <img src="" id="gallery4" style="object-fit: cover; height: 350px; width: 250px;" alt="" onclick="expandImage('gallery4')">
                       </div>
                     </div>
                   </div>
@@ -251,23 +251,30 @@
             <div class="img_container ">
               <div class="box b-1">
                 <div class="img-box">
-                  <img src="" id="gallery5" style="object-fit: cover;height: 380px; width: 250px;" alt="">
+                  <img src="" id="gallery5" style="object-fit: cover;height: 380px; width: 250px;" alt="" onclick="expandImage('gallery5')">
                 </div>
                 <div class="img-box">
-                  <img src="" id="gallery6" style="object-fit: cover;height: 380px; width: 250px;" alt="">
+                  <img src="" id="gallery6" style="object-fit: cover;height: 380px; width: 250px;" alt="" onclick="expandImage('gallery6')">
                 </div>
               </div>
               <div class="box b-2">
                 <div class="img-box">
-                  <img src="" id="gallery7" style="object-fit: cover;height: 380px; width: 250px;" alt="">
+                  <img src="" id="gallery7" style="object-fit: cover;height: 380px; width: 250px;" alt="" onclick="expandImage('gallery7')">
                 </div>
                 <div class="img-box">
-                  <img src="" id="gallery8" style="object-fit: cover;height: 400px; width: 250px;" alt="">
+                  <img src="" id="gallery8" style="object-fit: cover;height: 400px; width: 250px;" alt="" onclick="expandImage('gallery8')">
                 </div>
               </div>
             </div>
           </div>
-  </div>
+      </div>
+      <div id="expanded-image-container" class="expanded-image-container">
+        <img src="" alt="Expanded Image" id="expanded-image">
+        <button type="submit" class="close" onclick="closeExpandedImage()" style="right: 30px; position: fixed; outline: none;color: white; padding-bottom: 600px;">
+          <span>&times;</span>
+          <h6 style="color: white;">Close</h6>
+        </button>
+      </div>
   </section>
 
   <!-- end gallerysection -->
@@ -582,7 +589,7 @@
   <!-- ---------------------------------------------------------- -->
 <script>
   // Boolean value
-  const showVideo = true; // Set this to true or false based on your condition
+  const showVideo = false; // Set this to true or false based on your condition
 
   // Get the video container element
   const videoContainer = document.getElementById('video-container');
