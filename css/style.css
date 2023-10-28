@@ -722,6 +722,7 @@ a:focus {
 
 .contact_section {
   position: relative;
+  padding-bottom: 30px;
 }
 
 .contact_section .design-box {
